@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./img/A.svg" type="image/x-icon" />
+		<title>AAYou</title>
+
+		<!-- Compiled and minified CSS -->
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+		/>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+			integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div class="loader">
+			<div class="preloader-wrapper big active">
+				<div class="spinner-layer spinner-blue-only">
+					<div class="circle-clipper left">
+						<div class="circle"></div>
+					</div>
+					<div class="gap-patch">
+						<div class="circle"></div>
+					</div>
+					<div class="circle-clipper right">
+						<div class="circle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="cursor"></div>
+		<div class="info-cursor"></div>
+		<div class="starter">
+			<div class="top-left"></div>
+			<div class="bottom-left"></div>
+			<div class="top-right"></div>
+			<div class="bottom-right"></div>
+
+			<div class="btn-wrapper">
+				<a
+					href="#"
+					class="btn-large waves-effect waves-light pulse deep-purple darken-4"
+					>START</a
+				>
+			</div>
+		</div>
+
+		<div class="fixed-action-btn direction-top active feature">
+			<a id="menu" class="btn btn-floating btn-large indigo darken-3 pulse">
+				<i class="material-icons">search</i>
+			</a>
+		</div>
+
+		<!-- Tap Target Structure -->
+
+		<div class="tap-target-wrapper">
+			<div class="tap-target white" data-target="menu">
+				<div class="tap-target-content">
+					<h5 class="center">Search...</h5>
+					<div class="row">
+						<form class="col s12">
+							<div class="row">
+								<div class="input-field col s12">
+									<i class="material-icons prefix">mode_edit</i>
+									<textarea
+										id="icon_prefix2"
+										class="materialize-textarea"
+									></textarea>
+									<label for="icon_prefix2">First Name</label>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="logo">
+			<a href="#" class=""></a>
+		</div>
+		<ul id="slide-out" class="sidenav">
+			<li><a class="subheader">Menu</a></li>
+			<li><div class="divider"></div></li>
+			<li>
+				<a href="#services" class="sidenav-close"
+					><i class="small material-icons black-text">dashboard</i>Services</a
+				>
+			</li>
+			<li>
+				<a href="#testimonial" class="sidenav-close"
+					><i class="small material-icons black-text">question_answer</i
+					>Testimonial</a
+				>
+			</li>
+			<li>
+				<a href="#about" class="sidenav-close"
+					><i class="small material-icons black-text">person_pin</i>About US</a
+				>
+			</li>
+			<li>
+				<a href="#faq" class="sidenav-close"
+					><i class="small material-icons black-text">help_outline</i>FAQ</a
+				>
+			</li>
+			<li>
+				<a href="#contact" class="sidenav-close"
+					><i class="small material-icons black-text">perm_phone_msg</i>Contact
+					US</a
+				>
+			</li>
+
+			<li><div class="divider"></div></li>
+			<li><a class="subheader">Social Links</a></li>
+			<li class="social-link">
+				<a href="https://instagram.com" class="instagram"
+					><i class="material-icons">
+						<img src="./img/social/ig-instagram-icon.svg" alt="" />
+					</i>
+					Instagram
+				</a>
+			</li>
+			<li class="social-link">
+				<a href="https://facebook.com" class="facebook"
+					><i class="material-icons"
+						><img src="./img/social/facebook-round-color-icon.svg" alt="" /> </i
+					>Facebook
+				</a>
+			</li>
+			<li class="social-link">
+				<a href="https://twitter.com" class="twitter">
+					<i class="material-icons">
+						<img src="./img/social/twitter-black.svg" alt="" />
+					</i>
+					Twitter</a
+				>
+			</li>
+			<li class="social-link">
+				<a href="https://telegram.com" class="telegram">
+					<i class="material-icons">
+						<img src="./img/social/telegram-icon.svg" alt=""
+					/></i>
+					Telegram</a
+				>
+			</li>
+		</ul>
+		<div class="mobile-nav-btn">
+			<a
+				href="#"
+				data-target="slide-out"
+				class="sidenav-trigger hide-on-large-only"
+				><i class="material-icons pulse medium">menu</i></a
+			>
+		</div>
+		<div class="col nav hide-on-med-and-down">
+			<ul>
+				<li>
+					<a href="#services"
+						><i class="small material-icons white-text">dashboard</i></a
+					>
+					<span class="nav-text">Services</span>
+				</li>
+				<li>
+					<a href="#testimonial"
+						><i class="small material-icons white-text">question_answer</i></a
+					>
+					<span class="nav-text">Testimonial</span>
+				</li>
+				<li>
+					<a href="#about"
+						><i class="small material-icons white-text">person_pin</i></a
+					>
+					<span class="nav-text">About US</span>
+				</li>
+				<li>
+					<a href="#faq"
+						><i class="small material-icons white-text">help_outline</i></a
+					>
+					<span class="nav-text">FAQ</span>
+				</li>
+				<li>
+					<a href="#contact"
+						><i class="small material-icons white-text">perm_phone_msg</i></a
+					>
+					<span class="nav-text">Contact US</span>
+				</li>
+			</ul>
+			<div class="social">
+				<a href="https://instagram.com" class="instagram"
+					><img src="./img/social/ig-instagram-icon.svg" alt=""
+				/></a>
+				<a href="https://facebook.com" class="facebook"
+					><img src="./img/social/facebook-round-color-icon.svg" alt=""
+				/></a>
+				<a href="https://twitter.com" class="twitter"
+					><img src="./img/social/twitter-square-icon.svg" alt=""
+				/></a>
+				<a href="https://telegram.com" class="telegram"
+					><img src="./img/social/telegram-icon.svg" alt=""
+				/></a>
+			</div>
+		</div>
+		<section id="hero">
+			<div class="parallax-container">
+				<div class="parallax"><img src="./img/bg2.png" /></div>
+				<div class="info">
+					<h1><span>Welcome to</span> <span>AAYou</span></h1>
+				</div>
+			</div>
+		</section>
+		<section
+			id="services"
+			class="section"
+			style="position: relative; height: 100%"
+		>
+			<div class="container">
+				<div class="carousel card briem-hand-font row center-align">
+					<div
+						class="carousel-item card-panel box hoverable flow-text white-text"
+					>
+						Web Design
+					</div>
+					<div
+						class="carousel-item card-panel box hoverable flow-text white-text"
+					>
+						UI/UX Design
+					</div>
+					<div
+						class="carousel-item card-panel box hoverable flow-text white-text"
+					>
+						Back-End Developer
+					</div>
+					<div
+						class="carousel-item card-panel box hoverable flow-text white-text"
+					>
+						API Designer
+					</div>
+					<div
+						class="carousel-item card-panel box hoverable flow-text white-text"
+					>
+						Figma Expert
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="testimonial">
+			<div class="overflowed">
+				<div class="row">
+					<div class="col s11 m6 l3">
+						<div class="card center-align">
+							<div class="card-image">
+								<img src="./img/profile/1.png" />
+								<span class="card-title">Lora Johnson</span>
+								<a
+									class="btn-floating halfway-fab waves-effect waves-light red activator deep-purple darken-2"
+									><i class="material-icons">add</i></a
+								>
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4"
+									>This is Great!!!</span
+								>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4"
+									>Lora Johnson<i class="material-icons right">close</i></span
+								>
+								<blockquote>
+									<p>
+										"Amazing service! The team went above and beyond to meet my
+										needs. Highly recommended!"
+									</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="col s11 m6 l3">
+						<div class="card center-align">
+							<div class="card-image">
+								<img src="./img/profile/2.png" />
+								<span class="card-title">John Smith</span>
+								<a
+									class="btn-floating halfway-fab waves-effect waves-light red activator deep-purple darken-2"
+									><i class="material-icons">add</i></a
+								>
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4"
+									>Awesome Product</span
+								>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4"
+									>John Smith<i class="material-icons right">close</i></span
+								>
+								<blockquote>
+									<p>
+										"Incredible product! It's changed the way I work. Can't
+										imagine life without it!"
+									</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="col s11 m6 l3">
+						<div class="card center-align">
+							<div class="card-image">
+								<img src="./img/profile/3.png" />
+								<span class="card-title">Patricia Vermeer</span>
+								<a
+									class="btn-floating halfway-fab waves-effect waves-light red activator deep-purple darken-2"
+									><i class="material-icons">add</i></a
+								>
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4"
+									>Wow just Wow</span
+								>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4"
+									>Patricia Vermeer<i class="material-icons right"
+										>close</i
+									></span
+								>
+								<blockquote>
+									<p>
+										"Amazing service! The team went above and beyond to meet my
+										needs. Highly recommended!"
+									</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="col s11 m6 l3">
+						<div class="card center-align">
+							<div class="card-image">
+								<img src="./img/profile/4.png" />
+								<span class="card-title">John Wick</span>
+								<a
+									class="btn-floating halfway-fab waves-effect waves-light red activator deep-purple darken-2"
+									><i class="material-icons">add</i></a
+								>
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4"
+									>Love ittttt!!</span
+								>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4"
+									>John Wick<i class="material-icons right">close</i></span
+								>
+								<blockquote>
+									<p>
+										"Exceptional experience from start to finish. Will
+										definitely be a repeat customer!"
+									</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="col s11 m6 l3">
+						<div class="card center-align">
+							<div class="card-image">
+								<img src="./img/profile/5.png" />
+								<span class="card-title">Sara Green</span>
+								<a
+									class="btn-floating halfway-fab waves-effect waves-light red activator deep-purple darken-2"
+									><i class="material-icons">add</i></a
+								>
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4"
+									>This is Great!!!</span
+								>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4"
+									>Sara Green<i class="material-icons right">close</i></span
+								>
+								<blockquote>
+									<p>
+										"Amazing service! The team went above and beyond to meet my
+										needs. Highly recommended!"
+									</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="col s11 m6 l3">
+						<div class="card center-align">
+							<div class="card-image">
+								<img src="./img/profile/6.png" />
+								<span class="card-title">Liam Nison</span>
+								<a
+									class="btn-floating halfway-fab waves-effect waves-light red activator deep-purple darken-2"
+									><i class="material-icons">add</i></a
+								>
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4"
+									>This is Great!!!</span
+								>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4"
+									>Liam Nison<i class="material-icons right">close</i></span
+								>
+								<blockquote>
+									<p>
+										"Amazing service! The team went above and beyond to meet my
+										needs. Highly recommended!"
+									</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="col s11 m6 l3">
+						<div class="card center-align">
+							<div class="card-image">
+								<img src="./img/profile/7.png" />
+								<span class="card-title">Linda Kane</span>
+								<a
+									class="btn-floating halfway-fab waves-effect waves-light red activator deep-purple darken-2"
+									><i class="material-icons">add</i></a
+								>
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4"
+									>Just Dig it</span
+								>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4"
+									>Linda Kane<i class="material-icons right">close</i></span
+								>
+								<blockquote>
+									<p>
+										"Amazing service! The team went above and beyond to meet my
+										needs. Highly recommended!"
+									</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="col s11 m6 l3">
+						<div class="card center-align">
+							<div class="card-image">
+								<img src="./img/profile/8.png" />
+								<span class="card-title">Manny Rich</span>
+								<a
+									class="btn-floating halfway-fab waves-effect waves-light red activator deep-purple darken-2"
+									><i class="material-icons">add</i></a
+								>
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4"
+									>It is Useful!!!</span
+								>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4"
+									>Manny Rich<i class="material-icons right">close</i></span
+								>
+								<blockquote>
+									<p>
+										"Amazing service! The team went above and beyond to meet my
+										needs. Highly recommended!"
+									</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="col s11 m6 l3">
+						<div class="card center-align">
+							<div class="card-image">
+								<img src="./img/profile/1.png" />
+								<span class="card-title">Lora Johnson</span>
+								<a
+									class="btn-floating halfway-fab waves-effect waves-light red activator deep-purple darken-2"
+									><i class="material-icons">add</i></a
+								>
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4"
+									>This is Great!!!</span
+								>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4"
+									>Lora Johnson<i class="material-icons right">close</i></span
+								>
+								<blockquote>
+									<p>
+										"Amazing service! The team went above and beyond to meet my
+										needs. Highly recommended!"
+									</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="col s11 m6 l3">
+						<div class="card center-align">
+							<div class="card-image">
+								<img src="./img/profile/1.png" />
+								<span class="card-title">Lora Johnson</span>
+								<a
+									class="btn-floating halfway-fab waves-effect waves-light red activator deep-purple darken-2"
+									><i class="material-icons">add</i></a
+								>
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4"
+									>This is Great!!!</span
+								>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4"
+									>Lora Johnson<i class="material-icons right">close</i></span
+								>
+								<blockquote>
+									<p>
+										"Amazing service! The team went above and beyond to meet my
+										needs. Highly recommended!"
+									</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="col s11 m6 l3">
+						<div class="card center-align">
+							<div class="card-image">
+								<img src="./img/profile/1.png" />
+								<span class="card-title">Lora Johnson</span>
+								<a
+									class="btn-floating halfway-fab waves-effect waves-light red activator deep-purple darken-2"
+									><i class="material-icons">add</i></a
+								>
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4"
+									>This is Great!!!</span
+								>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4"
+									>Lora Johnson<i class="material-icons right">close</i></span
+								>
+								<blockquote>
+									<p>
+										"Amazing service! The team went above and beyond to meet my
+										needs. Highly recommended!"
+									</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="col s11 m6 l3">
+						<div class="card center-align">
+							<div class="card-image">
+								<img src="./img/profile/1.png" />
+								<span class="card-title">Lora Johnson</span>
+								<a
+									class="btn-floating halfway-fab waves-effect waves-light red activator deep-purple darken-2"
+									><i class="material-icons">add</i></a
+								>
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4"
+									>This is Great!!!</span
+								>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4"
+									>Lora Johnson<i class="material-icons right">close</i></span
+								>
+								<blockquote>
+									<p>
+										"Amazing service! The team went above and beyond to meet my
+										needs. Highly recommended!"
+									</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="about" class="black-text">
+			<h1 class="center-align">About We</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col s12">
+						<ul class="tabs">
+							<li
+								class="tab col s3 tooltipped"
+								data-position="bottom"
+								data-tooltip="Welcome to AAYou"
+							>
+								<a href="#welcome" class="active">Welcome to AAYou</a>
+							</li>
+							<li
+								class="tab col s3 tooltipped"
+								data-position="bottom"
+								data-tooltip="Our Story"
+							>
+								<a href="#story" class="active"> Our Story</a>
+							</li>
+							<li
+								class="tab col s3 tooltipped"
+								data-position="bottom"
+								data-tooltip="Our Team"
+							>
+								<a href="#team" class="active"> Our Team</a>
+							</li>
+							<li
+								class="tab col s3 tooltipped"
+								data-position="bottom"
+								data-tooltip="Our Values"
+							>
+								<a href="#value" class="active"> Our Values</a>
+							</li>
+						</ul>
+					</div>
+					<div id="welcome" class="col s12 flow-text card-panel black-text">
+						<blockquote>
+							At AAYou, we are a team of dedicated professionals who strive to
+							provide innovative solutions for our clients. Our mission is to
+							deliver exceptional services that meet the highest standards of
+							quality and customer satisfaction.
+						</blockquote>
+					</div>
+					<div id="story" class="col s12 flow-text card-panel black-text">
+						<blockquote>
+							AAYou was founded with the vision of creating a platform that
+							connects people with the services they need. Our journey began
+							with a simple idea: to make it easy for users to find and book
+							ambulance services. Since then, we have grown to become a leading
+							provider of app-based ambulance booking services.
+						</blockquote>
+					</div>
+					<div id="team" class="col s12 flow-text card-panel black-text">
+						<blockquote>
+							Our team consists of experienced engineers, developers, and
+							customer support specialists who work together to ensure that our
+							services are always available and reliable. Our team members are
+							passionate about what they do and are committed to delivering the
+							best possible experience for our users.
+						</blockquote>
+					</div>
+					<div id="value" class="col s12 flow-text card-panel black-text">
+						<blockquote>
+							At AAYou, we believe in the importance of simplicity, excellence,
+							and customer satisfaction. We strive to provide solutions that are
+							easy to use, efficient, and effective. Our values guide everything
+							we do, from the development of our apps to the way we interact
+							with our users.
+						</blockquote>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="faq">
+			<div class="row container">
+				<h4 class="white-text">Frequently Asked Questions</h4>
+				<div class="divider"></div>
+				<ul class="collapsible popout">
+					<li>
+						<div class="collapsible-header">
+							<i class="material-icons">info</i>What is your return policy?<span
+								class="badge"
+								><i class="material-icons red-text">star</i></span
+							>
+						</div>
+						<div class="collapsible-body white-text">
+							<span
+								>We offer a 30-day return policy on all items. Items must be
+								returned in their original condition with the receipt.</span
+							>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header">
+							<i class="material-icons">local_shipping</i>How long does shipping
+							take?<span class="badge"
+								><i class="material-icons red-text">star</i></span
+							>
+						</div>
+						<div class="collapsible-body white-text">
+							<span
+								>Shipping typically takes 5-7 business days for standard
+								delivery. Expedited options are available at checkout.</span
+							>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header">
+							<i class="material-icons">lock</i>Is my personal information
+							secure?<span class="badge"
+								><i class="material-icons red-text">star</i></span
+							>
+						</div>
+						<div class="collapsible-body white-text">
+							<span
+								>Yes, we use industry-standard encryption to protect your
+								personal information. We do not share your information with
+								third parties.</span
+							>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header">
+							<i class="material-icons">credit_card</i>What payment methods do
+							you accept?<span class="badge"
+								><i class="material-icons red-text">star</i></span
+							>
+						</div>
+						<div class="collapsible-body white-text">
+							<span
+								>We accept all major credit cards, PayPal, and Apple Pay. We
+								also offer financing options through Klarna.</span
+							>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header">
+							<i class="material-icons">help_outline</i>How can I track my
+							order?<span class="badge"
+								><i class="material-icons red-text">star</i></span
+							>
+						</div>
+						<div class="collapsible-body white-text">
+							<span
+								>Once your order has shipped, you will receive an email with a
+								tracking number. You can use this number to track your order on
+								our website.</span
+							>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="contact" class="grey lighten-2">
+			<div class="row center-align">
+				<h1>Contact Us</h1>
+				<div class="s12">
+					<a
+						class="btn-large waves-effect waves-light purple darken-4 pulse modal-trigger"
+						href="#modal"
+					>
+						Send Message
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- Modal Structure -->
+		<div id="modal" class="modal white-text">
+			<div class="modal-content">
+				<h4 class="center">Send Your Message</h4>
+
+				<div class="row">
+					<form class="col s12">
+						<div class="row">
+							<div class="input-field col s6 white-text">
+								<i class="material-icons prefix">account_circle</i>
+								<input
+									id="icon_prefix"
+									type="text"
+									class="validate white-text"
+								/>
+								<label for="icon_prefix">Name</label>
+							</div>
+							<div class="input-field col s6 white-text">
+								<i class="material-icons prefix">email</i>
+								<input
+									id="icon_email"
+									type="email"
+									class="validate white-text"
+								/>
+								<label for="icon_email">Email</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12 white-text">
+								<textarea
+									id="textarea2"
+									class="materialize-textarea white-text"
+									data-length="120"
+								></textarea>
+								<label for="textarea2">Message</label>
+							</div>
+						</div>
+						<div class="row flex">
+							<p>
+								<label>
+									<input name="group1" type="radio" checked />
+									<span>Male</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input name="group1" type="radio" />
+									<span>Female</span>
+								</label>
+							</p>
+						</div>
+						<div class="row">
+							<a
+								href="#!"
+								onclick="M.toast({html: `<span class='deep-purple-text darken-4' style='width:100%;height:100%'>Form Sent! Thank You</span>`, classes: 'rounded'})"
+								class="modal-close waves-effect waves-green btn-large center purple darken-4"
+								>Send</a
+							>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<footer class="page-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5 class="white-text">About Us</h5>
+						<p class="grey-text text-lighten-4">
+							Learn more about our team, mission, and values that drive our
+							coding services.
+						</p>
+						<ul>
+							<li>
+								<a class="grey-text text-lighten-3" href="#about-us"
+									>Our Story</a
+								>
+							</li>
+							<li>
+								<a class="grey-text text-lighten-3" href="#team"
+									>Meet the Team</a
+								>
+							</li>
+							<li>
+								<a class="grey-text text-lighten-3" href="#mission"
+									>Our Mission</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="col l4 offset-l2 s12">
+						<h5 class="white-text">Services</h5>
+						<ul>
+							<li>
+								<a class="grey-text text-lighten-3" href="#web-development"
+									>Web Development</a
+								>
+							</li>
+							<li>
+								<a
+									class="grey-text text-lighten-3"
+									href="#mobile-app-development"
+									>Mobile App Development</a
+								>
+							</li>
+							<li>
+								<a class="grey-text text-lighten-3" href="#software-development"
+									>Software Development</a
+								>
+							</li>
+							<li>
+								<a class="grey-text text-lighten-3" href="#consulting"
+									>Consulting</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					<p class="grey-text text-lighten-4">
+						AAYou©2024 Copyright Text. All rights reserved.
+					</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
