@@ -1,6 +1,18 @@
 # 🚀 AAYou - Where Ambulance Meets 🆙 - (Materialize CSS Crash Course Project)
+
 ## <a href="https://www.youtube.com/watch?v=2ByCZky5JyA&pp=wgIGCgQQAhgB">Youtube Video</a>
+
 Introducing AAYou, the ultimate app-based ambulance booking service that'll get you the help you need, lightning-fast! 💫 With a team of rockstar developers and a mission to make your life easier, we've got your back (and your health) covered. 💪
+
+## 🖥️ Technology Used
+
+This project leverages the following technologies:
+
+### - **Materialize CSS**
+### - **JavaScript**
+### - **HTML5**
+### - **Google Maps API**
+### - **Firebase**
 
 ## Features 🔥
 
@@ -13,7 +25,7 @@ Introducing AAYou, the ultimate app-based ambulance booking service that'll get 
 ## Getting Started 🚀
 
 1. Clone this repo with `git clone https://github.com/aasoftir/materialize-css-course.git`
-2. This project use "CDN" as Package Manager, You can use npm.
+2. This project uses "CDN" as Package Manager, You can use npm.
 3. Start the development with "index.html"
 4. Profit! 💰
 
