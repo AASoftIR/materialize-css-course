@@ -1,10 +1,11 @@
 # 🚀 AAYou - Where Ambulance Meets 🆙 - (Materialize CSS Crash Course Project)
 
 ## <a href="https://www.youtube.com/watch?v=2ByCZky5JyA&pp=wgIGCgQQAhgB">Youtube Video</a>
-## LIVE AT: [Github](https://aasoftir.github.io/materialize-css-course)
+
 Introducing AAYou, the ultimate app-based ambulance booking service that'll get you the help you need, lightning-fast! 💫 With a team of rockstar developers and a mission to make your life easier, we've got your back (and your health) covered. 💪
 
 ## 🖥️ Technology Used
+## LIVE AT: [Github](https://aasoftir.github.io/materialize-css-course)
 
 This project leverages the following technologies:
 
