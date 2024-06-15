@@ -11,8 +11,7 @@ This project leverages the following technologies:
 ### - **Materialize CSS**
 ### - **JavaScript**
 ### - **HTML5**
-### - **Google Maps API**
-### - **Firebase**
+
 
 ## Features 🔥
 
